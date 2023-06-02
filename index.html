@@ -7,13 +7,39 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-		<div class="container">
-			<div class="box red"></div>
-			<div class="box green"></div>
-			<div class="box blue"></div>
-			<div class="box purple"></div>
-			<div class="space"></div>
-		</div>
+	<div class="outer-box">
+	<div class="inner-box">
+		<header class="signup-header">
+			<h1>signup</h1>
+			<p>It just takes 30 second</p>
+		</header>
+		<main class="signup-main">
+			<form action="#">
+				<p>
+					<label for="fullname">Full Name </label>
+					<input type="text" name="" id="fullname" placeholder="Enter Your Name" required>
+				</p>
+				<p>
+					<label for="email">Email </label>
+					<input type="email" name="" id="email" placeholder="Enter your email" required>
+				</p>
+				<p>
+					<label for="password">Password </label>
+					<input type="password" name="" id="password" placeholder="at least 8 character" required>
+				</p>
+				<p>
+					
+					<input type="submit" name="" id="submit" value="Create Account">
+				</p>
+			</form>
 
+			</main>
+			<footer class="sinup-footer">
+				<p>Already have a Account? <a href="#">Login</a> </p>
+			</footer>
+		</div>
+		<div class="circle c1"></div>
+		<div class="circle c2"></div>
+	</div>
 </body>
 </html>

@@ -1,36 +1,87 @@
-.container{
-	width: 300px;
-	height: 800px;
-	background-color: gainsboro;
-	margin: 100px;
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,400;1,200&family=Lato:ital,wght@0,400;1,700&family=Poppins:ital,wght@0,700;1,400&family=Roboto:wght@300&display=swap');
+
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
-.box{
-	width: 100px;
-	height: 100px;
+body{
+	font-family: 'Lato', sans-serif;
 }
-.red{
-	background-color: red;
-	position: relative;
-	top: 100px;
-	left: 100px;
-}
-.green{
-	background-color: green;
-	position: absolute;
-	left: 500px;
-	bottom: 50px;
-}
-.blue{
-	background-color: blue;
-	position: fixed;
-	left: 500px;
-	bottom: 20px;
-}
-.purple{
-	background-color: purple;
-	position: sticky;
-	top: 100px;
-}
-.space{
+.outer-box{
+	width: 100vw;
 	height: 100vh;
+	background: url('https://static.vecteezy.com/system/resources/thumbnails/008/311/935/small/the-illustration-graphic-consists-of-abstract-background-with-a-blue-gradient-dynamic-shapes-composition-eps10-perfect-for-presentation-background-website-landing-page-wallpaper-vector.jpg');
+	background-size: cover;
+	background-position: center;
 }
+.inner-box{
+	width: 310px;
+	margin: 0 auto;%;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	padding: 20px 20px;
+	background-color: white;
+	border-radius: 8px;
+	z-index: 2;
+}
+.signup-header h1{
+	font-size: 2rem;
+	color: #212121;
+}
+.signup-header p{
+	font-size: 0.7rem;
+	color: #ccc;
+}
+.signup-main{
+	margin: 20px 0;
+}
+.signup-main p{
+	margin: 10px 0;
+}
+signup-main p label{
+	display: inline-block;
+}
+.signup-main p input{
+	width: 100%;
+	padding: 4px;
+	border: 2px solid #cccc ;
+	border-radius: 3px;
+	font-size: 1rem;
+	margin-top: 4px;
+}
+.signup-main p input[type="submit"]{
+	background-color: #3498db;
+	border: none;
+	color: white;
+	cursor: pointer;
+}
+.signup-main p input[type="submit"]:hover{
+	background-color: #2773a5;
+}
+.sinup-footer p{
+	color: #555;
+	text-align: center;
+}
+.sinup-footer p a{
+	color: #2773a5;
+}
+.circle{
+	width: 200px;
+	height: 200px;
+	border-radius: 100px;
+	color: white;
+	background: linear-gradient(to top right,#a36565aa,#ffffffff);
+	position: absolute;
+}
+.c1{
+	top: 100px;
+	left: 40px;
+}
+.c2{
+	bottom: 100px;
+	right: 40px;
+}
+
