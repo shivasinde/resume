@@ -1,45 +1,54 @@
-<!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title></title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
 </head>
 <body>
-	<div class="outer-box">
-	<div class="inner-box">
-		<header class="signup-header">
-			<h1>signup</h1>
-			<p>It just takes 30 second</p>
-		</header>
-		<main class="signup-main">
-			<form action="#">
-				<p>
-					<label for="fullname">Full Name </label>
-					<input type="text" name="" id="fullname" placeholder="Enter Your Name" required>
-				</p>
-				<p>
-					<label for="email">Email </label>
-					<input type="email" name="" id="email" placeholder="Enter your email" required>
-				</p>
-				<p>
-					<label for="password">Password </label>
-					<input type="password" name="" id="password" placeholder="at least 8 character" required>
-				</p>
-				<p>
-					
-					<input type="submit" name="" id="submit" value="Create Account">
-				</p>
-			</form>
-
-			</main>
-			<footer class="sinup-footer">
-				<p>Already have a Account? <a href="#">Login</a> </p>
-			</footer>
-		</div>
-		<div class="circle c1"></div>
-		<div class="circle c2"></div>
-	</div>
+  <form>
+    <fieldset>
+      <legend>Personal Information</legend>
+      <label for="name">Name </label>
+      <input type="text" name="name" id="name1">
+      <label for="email1">Email</label>
+      <input type="email" name="email" id="email1">
+      <label for="Phone">Phone</label>
+      <input type="tel" name="number" id="Phone">
+      <label for="date">Date of Birth</label>
+      <input type="datetime-local" name="datetime" id="date">
+      <span>Gender</span>
+      <label for="radio1">Male</label>
+      <input type="radio" name="radio" id="radio1">
+      <label for="radio2">Female</label>
+      <input type="radio" name="radio" id="radio2">
+      <label for="country">Country</label>
+      <select name="text" id="country">
+        <option value="india">INDIA</option>
+        <option value="japan">JAPAN</option>
+        <option value="us">US</option>
+        <option value="srilank">SRILANK</option>
+        <option value="karanatak">KARANATAK</option>
+      </select>
+    </fieldset>
+    <fieldset>
+      <legend>Address</legend>
+      <label for="street">Street</label>
+      <input type="text" name="street" id="street">
+      <label for="city">City</label>
+      <input type="text" name="city" id="city">
+      <label for="state">State</label>
+      <input type="text" name="state" id="state">
+      <label for="zip">Zip file</label>
+      <input type="text" name="zip" id="zip">
+    </fieldset>
+    <fieldset>
+      <legend>Other Information</legend>
+      <label for="textarea">Comments</label>
+      <textarea name="textarea" id="textarea" cols="30" rows="10"></textarea>
+      <label for="text">I agree to the trems of service</label>
+      <input type="checkbox" name="checkbox" id="text">
+    </fieldset>
+    <button>Submit</button>
+  </form>
 </body>
 </html>
